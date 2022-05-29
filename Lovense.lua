@@ -36,6 +36,7 @@ function Lovense.GetBattery()
 	local Req = HttpService:GetAsync(Lovense.Host .. "/Battery");
 	local Response = HttpService:JSONDecode(Req);
 	print("Battery Output: " .. Response.battery);
+    return Response.battery
 end
 
 function Lovense.Vibrate(speed, length)
@@ -51,7 +52,7 @@ function Lovense.Vibrate(speed, length)
 	end
 end
 
-function Lovense.Rotate()
+function Lovense.Rotate(speed, length)
 	local Req = HttpService:GetAsync(Lovense.Host .. "/ARotate?v=" .. speed .. "&sec=" .. length);
 	local Response = HttpService:JSONDecode(Req);
 
