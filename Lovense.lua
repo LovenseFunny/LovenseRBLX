@@ -15,12 +15,12 @@ local Lovense = {}
 
 local HttpService = game:GetService("HttpService")
 Lovense.debugmode = false;
-Lovense.host = "";
+Lovense.Host = "";
 
 function Lovense.GetToys()
-    local Req = HttpService:GetAsync(Lovense.host .. "/GetToys")
+    local Req = HttpService:GetAsync(Lovense.Host .. "/GetToys")
     local Response = HttpService:JSONDecode(Req);
-    --Lovense.host = Response.domain .. Response.httpsPort;
+    --Lovense.Host = Response.domain .. Response.httpsPort;
     print("Toy(s): " .. Response.toys);
     if Lovense.debugmode == true then
         print(Response.Body)
@@ -32,17 +32,17 @@ end
 
 
 function Lovense.Domain()
-    print(Lovense.host);
+    print(Lovense.Host);
 end
 
 function Lovense.GetBattery()
-    local Req = HttpService:GetAsync(Lovense.host .. "/Battery");
+    local Req = HttpService:GetAsync(Lovense.Host .. "/Battery");
     local Response = HttpService:JSONDecode(Req);
     print("Battery Output: " .. Response.battery);
 end
 
 function Lovense.Vibrate(speed, length)
-    local Req = HttpService:GetAsync(Lovense.host .. "/AVibrate?v=" .. speed .. "&sec=" .. length);
+    local Req = HttpService:GetAsync(Lovense.Host .. "/AVibrate?v=" .. speed .. "&sec=" .. length);
     local Response = HttpService:JSONDecode(Req);
 
     print("[Lovense] Started vibrating at speed " .. speed .. " for " .. length .. " seconds.");
@@ -55,7 +55,7 @@ function Lovense.Vibrate(speed, length)
 end
 
 function Lovense.Rotate()
-    local Req = HttpService:GetAsync(Lovense.host .. "/ARotate?v=" .. speed .. "&sec=" .. length);
+    local Req = HttpService:GetAsync(Lovense.Host .. "/ARotate?v=" .. speed .. "&sec=" .. length);
     local Response = HttpService:JSONDecode(Req);
 
     print("[Lovense] Started rotating at speed " .. speed .. " for " .. length .. " seconds.");
