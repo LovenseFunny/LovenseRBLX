@@ -18,20 +18,21 @@ Lovense.debugmode = false;
 Lovense.Host = "";
 
 function Lovense.GetToys()
-	print'[Lovense] Receiving status of toys, please wait...'
 	local Req = HttpService:GetAsync(Lovense.Host .. "/GetToys")
 	local Response = HttpService:JSONDecode(Req);
+	
 	--Lovense.Host = Response.domain .. Response.httpsPort;
 	
 	wait(3)
-	
-	print("[Lovense] Toy data: " .. Req.Body)
 
 	if Lovense.debugmode == true then
-		print(Response.Body)
+		print(Response.data)
 	else
 		--
 	end
+	
+	return Response.data
+	
 end
 
 
@@ -53,7 +54,7 @@ function Lovense.Vibrate(speed, length)
 	print("[Lovense] Started vibrating at speed " .. speed .. " for " .. length .. " seconds.");
 
 	if Lovense.debugmode == true then
-		print(Response.Body);
+		print(Response.data);
 	else
 		--
 	end
@@ -66,7 +67,7 @@ function Lovense.Rotate()
 	print("[Lovense] Started rotating at speed " .. speed .. " for " .. length .. " seconds.");
 
 	if Lovense.debugmode == true then
-		print(Response.Body)
+		print(Response.data)
 	else
 		--
 	end
