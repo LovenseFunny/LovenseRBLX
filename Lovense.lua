@@ -26,7 +26,7 @@ function Lovense.GetToys()
     if Response.data == "{\n  }" then
         print'[Lovense] No toys detected'
     else
-        print("[Lovense] Toys: " .. Response.toys);
+        print("[Lovense] Toys: " .. Response.data);
     end
 
     if Lovense.debugmode == true then
