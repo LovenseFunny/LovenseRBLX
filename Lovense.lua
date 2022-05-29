@@ -18,6 +18,7 @@ Lovense.debugmode = false;
 Lovense.host = "";
 
 function Lovense.GetToys()
+    print'[Lovense] Getting toys...'
     local Req = HttpService:GetAsync("http://api.lovense.com/api/lan/getToys")
     local Response = HttpService:JSONDecode(Req);
     Lovense.host = Response.domain .. Response.httpsPort;
