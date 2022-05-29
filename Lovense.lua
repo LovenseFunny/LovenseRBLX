@@ -18,12 +18,10 @@ Lovense.debugmode = false;
 Lovense.host = "";
 
 function Lovense.GetToys()
-    print'[Lovense] Getting toys...'
-    local Req = HttpService:GetAsync("http://api.lovense.com/api/lan/getToys")
+    local Req = HttpService:GetAsync(Lovense.host .. "/GetToys")
     local Response = HttpService:JSONDecode(Req);
-    Lovense.host = Response.domain .. Response.httpsPort;
+    --Lovense.host = Response.domain .. Response.httpsPort;
     print("Toy(s): " .. Response.toys);
-    print("Host: " .. Lovense.host);
     if Lovense.debugmode == true then
         print(Response.Body)
     else
