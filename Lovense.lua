@@ -21,7 +21,13 @@ function Lovense.GetToys()
     local Req = HttpService:GetAsync(Lovense.Host .. "/GetToys")
     local Response = HttpService:JSONDecode(Req);
     --Lovense.Host = Response.domain .. Response.httpsPort;
-    print("Toy(s): " .. Response.toys);
+    
+    if Response.toys == "{\n  }" then
+        print'[Lovense] No toys detected'
+    else
+        print("[Lovense] Toys: " .. Response.toys);
+    end
+
     if Lovense.debugmode == true then
         print(Response.Body)
     else
