@@ -14,7 +14,7 @@ Lovense.Host = "http://127-0-0-1.lovense.club:20010"; -- Find yours in the Loven
 Lovense.Vibrate(10,5);
 ```
 
-Head to the wiki for instructions <3
+Head to the wiki for instructions / function usage <3
 
 [Wiki](https://github.com/esexual/LovenseRBLX/wiki/Home)
 
