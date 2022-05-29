@@ -14,7 +14,7 @@
 local Lovense = {}
 
 HttpService = game:GetService("HttpService")
-Lovense.Host = "";
+Lovense.debugmode = false;
 Lovense.Host = "";
 
 function Lovense.GetToys()
