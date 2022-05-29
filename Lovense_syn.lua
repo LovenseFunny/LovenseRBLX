@@ -14,7 +14,7 @@ local Lovense = {}
 
 local HttpService = game:GetService("HttpService")
 Lovense.debugmode = false;
-Lovense.host;
+Lovense.host = "";
 
 function Lovense.GetToys()
     local Response = syn.request({
