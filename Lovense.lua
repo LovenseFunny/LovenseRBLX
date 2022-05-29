@@ -13,8 +13,8 @@
 
 local Lovense = {}
 
-local HttpService = game:GetService("HttpService")
-Lovense.debugmode = false;
+HttpService = game:GetService("HttpService")
+Lovense.Host = "";
 Lovense.Host = "";
 
 function Lovense.GetToys()
