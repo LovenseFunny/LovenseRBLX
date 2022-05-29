@@ -14,3 +14,7 @@ Lovense.GetToys()
 
 Lovense.Vibrate(10,5);
 ```
+
+Head to the wiki for instructions <3
+
+[Wiki](https://github.com/esexual/LovenseRBLX/wiki/Home)
