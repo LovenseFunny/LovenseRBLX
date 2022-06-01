@@ -15,9 +15,31 @@ local Lovense = {}
 
 HttpService = game:GetService("HttpService")
 Lovense.debugmode = false;
+Lovense.AutoObtainHost = true;
 Lovense.Host = "";
 
-function Lovense.GetToys()
+function Lovense.GetHost()
+	local Req = HttpService:GetAsync("https://api.lovense.com/api/lan/getToys")
+	local Response = HttpService:JSONDecode(Req);
+
+	local domain = Response.domain;
+	local port = Response.httpsPort;
+
+	if Lovense.debugmode == true then
+		print("[Lovense] Device ID: " .. Response.deviceId);
+		print("[Lovense] Platform: " .. Response.platform);
+		print("[Lovense] Domain: " .. Response.domain);
+		print("[Lovense] Port: " .. Response.httpsPort);
+	end
+
+	return domain .. ":" .. port
+end
+
+if Lovense.AutoObtainHost == true then
+	Lovense.Host = Lovense.GetHost();
+end
+
+function Lovense.GetToyInfo()
 	local Req = HttpService:GetAsync(Lovense.Host .. "/GetToys")
 	local Response = HttpService:JSONDecode(Req);
 	if Lovense.debugmode == true then
@@ -26,7 +48,6 @@ function Lovense.GetToys()
 		--
 	end
 	return Response.data
-	
 end
 
 function Lovense.Domain()
@@ -36,7 +57,7 @@ function Lovense.GetBattery()
 	local Req = HttpService:GetAsync(Lovense.Host .. "/Battery");
 	local Response = HttpService:JSONDecode(Req);
 	print("Battery Output: " .. Response.battery);
-    return Response.battery
+	return Response.battery
 end
 
 function Lovense.Vibrate(speed, length)
