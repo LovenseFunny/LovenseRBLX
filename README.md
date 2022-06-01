@@ -9,7 +9,7 @@ local Lovense = loadstring(game:HttpGet('https://raw.githubusercontent.com/imLys
 
 ```lua
 local Lovense = loadstring(game:HttpGet('https://raw.githubusercontent.com/imLyssa/LovenseRBLX/main/Lovense.lua'))()
-Lovense.Host = "http://127-0-0-1.lovense.club:20010"; -- Find yours in the Lovense connect app (KEEP HTTP:// AND 20010)
+Lovense.debugmode = false; -- false by default, can be omitted if you're not setting it to true
 
 Lovense.Vibrate(10,5);
 ```
