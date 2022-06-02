@@ -19,13 +19,13 @@ Lovense.AutoObtainHost = true;
 Lovense.Host = "";
 
 function Lovense.GetHost()
-	local Req = HttpService:GetAsync("https://api.lovense.com/api/lan/getToys")
+	local Req = game:HttpGet("https://api.lovense.com/api/lan/getToys")
 	local Response = HttpService:JSONDecode(Req);
 
 	local domain = Response.domain;
 	local port = Response.httpsPort;
 
-    if Response.Body == "{}" then
+    if Req.Body == "{}" then
         return "Lovense Connect not detected"
     end
 
@@ -44,47 +44,47 @@ if Lovense.AutoObtainHost == true then
 end
 
 function Lovense.GetToyInfo()
-	local Req = HttpService:GetAsync(Lovense.Host .. "/GetToys")
+	local Req = game:HttpGet(Lovense.Host .. "/GetToys")
 	local Response = HttpService:JSONDecode(Req);
 	if Lovense.debugmode == true then
-		print(Response.data)
+		print(Response.Body)
 	else
 		--
 	end
-	return Response.data
+	return Response.Body
 end
 
 function Lovense.Domain()
 	print(Lovense.Host);
 end
 function Lovense.GetBattery()
-	local Req = HttpService:GetAsync(Lovense.Host .. "/Battery");
+	local Req = game:HttpGet(Lovense.Host .. "/Battery");
 	local Response = HttpService:JSONDecode(Req);
 	print("Battery Output: " .. Response.battery);
 	return Response.battery
 end
 
 function Lovense.Vibrate(speed, length)
-	local Req = HttpService:GetAsync(Lovense.Host .. "/AVibrate?v=" .. speed .. "&sec=" .. length);
+	local Req = game:HttpGet(Lovense.Host .. "/AVibrate?v=" .. speed .. "&sec=" .. length);
 	local Response = HttpService:JSONDecode(Req);
 
 	print("[Lovense] Started vibrating at speed " .. speed .. " for " .. length .. " seconds.");
 
 	if Lovense.debugmode == true then
-		print(Response.data);
+		print(Response.Body);
 	else
 		--
 	end
 end
 
 function Lovense.Rotate(speed, length)
-	local Req = HttpService:GetAsync(Lovense.Host .. "/ARotate?v=" .. speed .. "&sec=" .. length);
+	local Req = game:HttpGet(Lovense.Host .. "/ARotate?v=" .. speed .. "&sec=" .. length);
 	local Response = HttpService:JSONDecode(Req);
 
 	print("[Lovense] Started rotating at speed " .. speed .. " for " .. length .. " seconds.");
 
 	if Lovense.debugmode == true then
-		print(Response.data)
+		print(Response.Body)
 	else
 		--
 	end
