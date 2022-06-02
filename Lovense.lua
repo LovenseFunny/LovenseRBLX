@@ -13,7 +13,6 @@
 
 local Lovense = {}
 
-local HttpService = game:GetService("HttpService")
 Lovense.debugmode = false;
 Lovense.AutoObtainHost = true;
 Lovense.Host = "";
