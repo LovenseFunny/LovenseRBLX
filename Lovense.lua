@@ -53,11 +53,11 @@ function Lovense.GetToyInfo()
 	local Req = game:HttpGet(Lovense.Host .. "/GetToys")
 	local Response = HttpService:JSONDecode(Req);
 	if Lovense.debugmode == true then
-		print(Response.Body)
+		print(Response.data)
 	else
 		--
 	end
-	return Response.Body
+	return Response.data
 end
 
 function Lovense.Domain()
@@ -77,7 +77,7 @@ function Lovense.Vibrate(speed, length)
 	print("[Lovense] Started vibrating at speed " .. speed .. " for " .. length .. " seconds.");
 
 	if Lovense.debugmode == true then
-		print(Response.Body);
+		print(Response.data);
 	else
 		--
 	end
@@ -90,7 +90,7 @@ function Lovense.Rotate(speed, length)
 	print("[Lovense] Started rotating at speed " .. speed .. " for " .. length .. " seconds.");
 
 	if Lovense.debugmode == true then
-		print(Response.Body)
+		print(Response.data)
 	else
 		--
 	end
