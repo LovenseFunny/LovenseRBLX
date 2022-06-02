@@ -25,11 +25,10 @@ function Lovense.GetHost()
 	local domain = Response.domain;
 	local port = Response.httpsPort;
 
-    if Req.Body == "{}" then
-        return "Lovense Connect not detected"
+    if domain == nil then
+        return false
     else
-        Lovense.Host = domain .. ":" .. port;
-    end
+        Lovense.Host = domain .. ":" .. port
 
 	if Lovense.debugmode == true then
 		print("[Lovense] Device ID: " .. Response.deviceId);
