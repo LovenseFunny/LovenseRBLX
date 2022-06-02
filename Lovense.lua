@@ -27,6 +27,8 @@ function Lovense.GetHost()
 
     if Req.Body == "{}" then
         return "Lovense Connect not detected"
+    else
+        Lovense.Host = domain .. ":" .. port;
     end
 
 	if Lovense.debugmode == true then
@@ -36,11 +38,13 @@ function Lovense.GetHost()
 		print("[Lovense] Port: " .. Response.httpsPort);
 	end
 
-	return domain .. ":" .. port
+	
 end
 
 if Lovense.AutoObtainHost == true then
 	Lovense.Host = Lovense.GetHost();
+else
+    return false
 end
 
 function Lovense.GetToyInfo()
