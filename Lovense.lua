@@ -26,9 +26,10 @@ function Lovense.GetHost()
 	local port = Response.httpsPort;
 
     if domain == nil then
-        return false
+        return Lovense.Host;
     else
-        Lovense.Host = domain .. ":" .. port
+        Lovense.Host = pcall(domain .. ":" .. port)
+    end
 
 	if Lovense.debugmode == true then
 		print("[Lovense] Device ID: " .. Response.deviceId);
