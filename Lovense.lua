@@ -25,18 +25,19 @@ function Lovense.GetHost()
 	local domain = Response.domain;
 	local port = Response.httpsPort;
 
-    if domain == nil then
-        return "Error"
-    end
-
 	if Lovense.debugmode == true then
+        print("[Lovense] Response: " .. Response.Body)
 		print("[Lovense] Device ID: " .. Response.deviceId);
 		print("[Lovense] Platform: " .. Response.platform);
 		print("[Lovense] Domain: " .. Response.domain);
 		print("[Lovense] Port: " .. Response.httpsPort);
 	end
 
-	return domain .. port
+    if domain == nil then
+        return "Error"
+    else
+        return domain .. port
+    end
 end
 
 if Lovense.AutoObtainHost == true then
