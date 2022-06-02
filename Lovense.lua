@@ -19,7 +19,7 @@ Lovense.AutoObtainHost = true;
 Lovense.Host = "";
 
 function squeeze(d,p)
-    Lovense.Host = d .. ":" .. p;
+    return d .. ":" .. p;
 end
 
 function Lovense.GetHost()
@@ -31,8 +31,6 @@ function Lovense.GetHost()
 
     if domain == nil then
         return "Error"
-    else
-        squeeze(domain,port)
     end
 
 	if Lovense.debugmode == true then
@@ -42,7 +40,7 @@ function Lovense.GetHost()
 		print("[Lovense] Port: " .. Response.httpsPort);
 	end
 
-	
+	return squeeze(domain,port)
 end
 
 if Lovense.AutoObtainHost == true then
