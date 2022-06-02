@@ -46,7 +46,7 @@ end
 if Lovense.AutoObtainHost == true then
 	Lovense.Host = Lovense.GetHost();
 else
-    return Lovense.Host
+    return "Error"
 end
 
 function Lovense.GetToyInfo()
