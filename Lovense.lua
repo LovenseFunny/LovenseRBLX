@@ -36,7 +36,7 @@ function Lovense.GetHost()
     if domain == nil then
         return "Error"
     else
-        return domain .. port
+        return domain .. ":" .. port
     end
 end
 
