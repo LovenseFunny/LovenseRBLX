@@ -14,7 +14,7 @@ Lovense.debugmode = false; -- false by default, can be omitted if you're not set
 Lovense.Vibrate(10,5);
 ```
 
-Head to the wiki for instructions / function usage <3
+Head to the wiki for instructions, function usage & other info <3
 
 [Wiki](https://github.com/imLyssa/LovenseRBLX/wiki/Home)
 
