@@ -18,10 +18,6 @@ Lovense.debugmode = false;
 Lovense.AutoObtainHost = true;
 Lovense.Host = "";
 
-function squeeze(d,p)
-    return d .. ":" .. p;
-end
-
 function Lovense.GetHost()
 	local Req = game:HttpGet("https://api.lovense.com/api/lan/getToys")
 	local Response = HttpService:JSONDecode(Req);
@@ -40,7 +36,7 @@ function Lovense.GetHost()
 		print("[Lovense] Port: " .. Response.httpsPort);
 	end
 
-	return squeeze(domain,port)
+	return domain .. port
 end
 
 if Lovense.AutoObtainHost == true then
