@@ -30,7 +30,7 @@ function Lovense.GetHost()
 	local port = Response.httpsPort;
 
     if domain == nil then
-        return false
+        return "Error"
     else
         squeeze(domain,port)
     end
