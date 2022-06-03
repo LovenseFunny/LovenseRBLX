@@ -13,6 +13,7 @@
 
 local Lovense = {}
 
+--Options
 Lovense.debugmode = false;
 Lovense.AutoObtainHost = true;
 Lovense.Host = "";
@@ -35,7 +36,7 @@ function Lovense.GetHost()
     if domain == nil then
         return "Error"
     else
-        return domain .. ":" .. port
+        return domain..":".. port
     end
 end
 
@@ -66,6 +67,7 @@ function Lovense.GetBattery()
 	return Response.battery
 end
 
+--Functions for handling vibration & rotation requests
 function Lovense.Vibrate(speed, length)
 	local Req = game:HttpGet(Lovense.Host .. "/AVibrate?v=" .. speed .. "&sec=" .. length);
 	local Response = HttpService:JSONDecode(Req);
