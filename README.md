@@ -22,5 +22,5 @@ This project is work in progress. Stay tuned for updates
 
 # Cool People
 
-[Patch](https://github.com/patchpatchpatchpatch) - Created the wiki
+[Patch](https://github.com/patchpatchpatchpatch) - Created the wiki&nbsp;&nbsp;&nbsp;
 [James Bandz](https://github.com/jamesbandz) - Stupid idiot (contributed nothing but wanted to be on here)
