@@ -1,7 +1,7 @@
 # LovenseRBLX
 Control your Lovense toy with Roblox
 
-> loadstring:
+> Loadstring:
 
 ```lua
 local Lovense = loadstring(game:HttpGet('https://raw.githubusercontent.com/LovenseFunny/LovenseRBLX/main/Lovense.lua'))()
