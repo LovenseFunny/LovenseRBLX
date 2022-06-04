@@ -19,3 +19,8 @@ Head to the wiki for instructions, function usage & other info <3
 [Wiki](https://github.com/LovenseFunny/LovenseRBLX/wiki/Home)
 
 This project is work in progress. Stay tuned for updates
+
+# Cool People
+
+[Patch](https://github.com/patchpatchpatchpatch) - Created the wiki
+[James Bandz](https://github.com/jamesbandz) - Stupid idiot (contributed nothing but wanted to be on here)
