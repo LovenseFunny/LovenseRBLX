@@ -18,6 +18,8 @@ Lovense.debugmode = false;
 Lovense.AutoObtainHost = true;
 Lovense.Host = "";
 
+local MaxIntensity = 20
+
 function Lovense.GetHost()
 	local Req = game:HttpGet("https://api.lovense.com/api/lan/getToys")
 	local Response = HttpService:JSONDecode(Req);
@@ -69,6 +71,14 @@ end
 
 --Functions for handling vibration & rotation requests
 function Lovense.Vibrate(speed, length)
+
+	if speed < MaxIntensity then
+		print'[Lovense] Intensity is too high! Please use a number between 0 - 20.';
+		return end
+	else
+		-- <3
+	end
+	
 	local Req = game:HttpGet(Lovense.Host .. "/AVibrate?v=" .. speed .. "&sec=" .. length);
 	local Response = HttpService:JSONDecode(Req);
 
@@ -77,11 +87,19 @@ function Lovense.Vibrate(speed, length)
 	if Lovense.debugmode == true then
 		print(Response.data);
 	else
-		--
+		-- <3
 	end
 end
 
 function Lovense.Rotate(speed, length)
+
+	if speed < MaxIntensity then
+		print'[Lovense] Intensity is too high! Please use a number between 0 - 20.';
+		return end
+	else
+		-- <3
+	end
+
 	local Req = game:HttpGet(Lovense.Host .. "/ARotate?v=" .. speed .. "&sec=" .. length);
 	local Response = HttpService:JSONDecode(Req);
 
