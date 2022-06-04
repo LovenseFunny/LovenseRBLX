@@ -7,7 +7,6 @@
 `-----' `---'   `--'   `----'`--''--'`----'  `----' 
                                                     
         Control your Lovense toy with Roblox
-	  https://github.com/LovenseFunny
 
 ]]
 
