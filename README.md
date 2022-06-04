@@ -24,4 +24,5 @@ This project is work in progress. Stay tuned for updates
 
 [Lyssa](https://github.com/imLyssa) - Developed & tested the project, extremely horny for no reason\
 [Patch](https://github.com/patchpatchpatchpatch) - Created the wiki, emotional support\
-[James Bandz](https://github.com/jamesbandz) - Stupid idiot (contributed nothing but wanted to be on here)
+[James Bandz](https://github.com/jamesbandz) - Stupid idiot (contributed nothing but wanted to be on here)\
+[Hovac](https://www.youtube.com/c/hovacc) - Also a stupid idiot (contributed nothing but also wanted to be on here)
