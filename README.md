@@ -22,6 +22,6 @@ This project is work in progress. Stay tuned for updates
 
 # People
 
-[Lyssa](https://github.com/imLyssa) - Developed & tested the project, extremely horny for no reason\
+[Lunatic/Lyssa](https://github.com/iloveglaive) - Developed & tested the project, extremely horny for no reason\
 [James Bandz](https://soundcloud.com/doxbincore) - Most awesome individual ever (Wrote the wiki and helped me out with Lua cause I forgot everything)\
 [Hovac](https://www.youtube.com/c/hovacc) - Also a stupid idiot (contributed nothing but wanted to be on here)
