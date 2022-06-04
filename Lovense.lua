@@ -6,7 +6,7 @@
 |  '--.' '-' ' \    / \   --.|  ||  |.-'  `)\   --. 
 `-----' `---'   `--'   `----'`--''--'`----'  `----' 
                                                     
-        Control your Lovense toy with Roblox
+    Control your Lovense toy with Roblox
 	Made with love by Lyssa#1337 (@170q)
 
 ]]
@@ -17,8 +17,6 @@ local Lovense = {}
 Lovense.debugmode = false;
 Lovense.AutoObtainHost = true;
 Lovense.Host = "";
-
-local MaxIntensity = 20
 
 function Lovense.GetHost()
 	local Req = game:HttpGet("https://api.lovense.com/api/lan/getToys")
@@ -72,7 +70,7 @@ end
 --Functions for handling vibration & rotation requests
 function Lovense.Vibrate(speed, length)
 
-	if speed > MaxIntensity then
+	if speed > 20 then -- Max intensity is 20
 		print'[Lovense] Intensity is too high! Please use a number between 0 - 20.';
 		return end
 	else
@@ -93,7 +91,7 @@ end
 
 function Lovense.Rotate(speed, length)
 
-	if speed > MaxIntensity then
+	if speed > 20 then
 		print'[Lovense] Intensity is too high! Please use a number between 0 - 20.';
 		return end
 	else
