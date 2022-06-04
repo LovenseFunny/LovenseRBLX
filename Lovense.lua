@@ -72,7 +72,7 @@ end
 --Functions for handling vibration & rotation requests
 function Lovense.Vibrate(speed, length)
 
-	if speed < MaxIntensity then
+	if speed > MaxIntensity then
 		print'[Lovense] Intensity is too high! Please use a number between 0 - 20.';
 		return end
 	else
@@ -93,7 +93,7 @@ end
 
 function Lovense.Rotate(speed, length)
 
-	if speed < MaxIntensity then
+	if speed > MaxIntensity then
 		print'[Lovense] Intensity is too high! Please use a number between 0 - 20.';
 		return end
 	else
