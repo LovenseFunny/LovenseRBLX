@@ -7,7 +7,7 @@
 `-----' `---'   `--'   `----'`--''--'`----'  `----' 
                                                     
         Control your Lovense toy with Roblox
-           Created by Lyssa#1337 (@170q)
+	  https://github.com/LovenseFunny
 
 ]]
 
