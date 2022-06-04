@@ -20,7 +20,8 @@ Head to the wiki for instructions, function usage & other info <3
 
 This project is work in progress. Stay tuned for updates
 
-# Cool People
+# People
 
+[Lyssa](https://github.com/imLyssa) - Developed & tested the project, extremely horny for no reason\
 [Patch](https://github.com/patchpatchpatchpatch) - Created the wiki\
 [James Bandz](https://github.com/jamesbandz) - Stupid idiot (contributed nothing but wanted to be on here)
