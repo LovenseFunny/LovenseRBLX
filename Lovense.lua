@@ -7,7 +7,7 @@
 `-----' `---'   `--'   `----'`--''--'`----'  `----' 
                                                     
     Control your Lovense toy with Roblox
-   Made with love by paris#1000 (@sha7wty)
+   Made with love by paris#1000 (@pl7shie)
 
 ]]
 
