@@ -22,7 +22,7 @@ This project is work in progress. Stay tuned for updates
 
 # People
 
-[Jasmine](https://github.com/appIesauce) - Developed & tested the project, extremely horny for no reason\
+[Jinx](https://github.com/meowussy) - Developed & tested the project, extremely horny for no reason\
 [Patch](https://github.com/soundclouder) - Most awesome individual ever (Wrote the wiki and helped me out with Lua cause I forgot everything)\
 [Hovac](https://www.youtube.com/c/hovacc) - Also a stupid idiot (contributed nothing but wanted to be on here)\
 [Jumpscare](https://www.youtube.com/channel/UCUQaVnO-01CHMqs1Sd38beA) - Emotional support & being the best bf ever 
