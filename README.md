@@ -22,5 +22,4 @@ This project is work in progress. Stay tuned for updates
 
 # Developed by
 
-[Nessa](https://github.com/nessacistic)
-[Instagram](https://instagram.com/nessacistic) • [Twitter](https://twitter.com/nessacistic)
+nessa - [Instagram](https://instagram.com/nessacistic) • [Twitter](https://twitter.com/nessacistic)
